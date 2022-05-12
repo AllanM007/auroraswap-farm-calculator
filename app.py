@@ -5,6 +5,7 @@ from flask import Flask
 from web3 import Web3
 import requests
 import asyncio
+import time
 
 w3 = Web3(Web3.HTTPProvider('https://mainnet.aurora.dev/'))
 
@@ -201,7 +202,10 @@ async def get_farm_apr():
 
     return (poolData)
 
+s = time.perf_counter()
 asyncio.run(get_farm_apr())
+elapsed = time.perf_counter() - s
+print(f"{__file__} executed in {elapsed:0.2f} seconds.")
 
 if __name__ == '__main__':
     app.debug = True
