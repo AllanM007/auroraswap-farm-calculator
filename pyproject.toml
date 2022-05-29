@@ -1,0 +1,32 @@
+[project]
+name = "multifarm"
+description = "multifrm auroraswap farm calculator project"
+version = "0.1.0"
+authors = [
+    { name = "Allan"},
+    { email = "mwarangallan345@gmail.com" }
+]
+
+dependencies = [
+  "requests==2.27.1",
+  "web3==5.29.0",
+  "Flask==2.1.2"
+]
+
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE.txt"}
+keywords = ["yield-farming", "python3", "web3.py", "aurora", "DeFi"]
+
+maintainers = [
+  {name = "Allan", email = "mwarangallan345@gmail.com"}
+]
+classifiers = [
+  "Development Status :: 1 - Beta",
+  "Programming Language :: Python"
+]
+
+[project.urls]
+documentation = "https://docs.auroraswap.net/"
+repository = "https://github.com/AllanM007/auroraswap-farm-calculator"
+changelog = "https://github.com/AllanM007/auroraswap-farm-calculator/CHANGELOG.md"
